@@ -1,0 +1,35 @@
+#hmBrand{
+    color: white;
+    font-size: 20px;
+    opacity: .5;
+    text-decoration: none;
+    margin-top: 10%;
+}
+
+#hmBrand:hover{
+    opacity: 1;
+}
+
+.formStyle{
+    margin-right:0px;
+    display: inline-block;
+}
+
+.formStyleHeader{
+    margin-left:25%; 
+}
+
+/*.page-navigation a {
+    margin: 0 2px;
+    display: inline-block;
+    padding: 3px 5px;
+    color: rgb(216, 137, 137);
+    background-color: #70b7ec;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+   
+  .page-navigation a[data-selected] {
+    background-color: #3d9be0;
+  }*/
