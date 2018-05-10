@@ -1,0 +1,27 @@
+<html>
+    <head>
+            <%include ../layout/headerUser%>
+    </head>
+    <body>
+            <div class="box-body table-responsive col-md-8 col-md-offset-2">           
+        <h3> your Events  </h3>
+        <table  class="table table-bordered table-hover tablecontainer">
+            <thead>
+                <tr><th>id</th><th>title</th></tr>
+            </thead>
+            <tbody>
+                <% data.forEach((event)=>{ %>                                                                                                 <!-- //first <%= event.mainSpeakerId%>                          -->
+                <tr><td> <%= event._id%></td><td> <%= event.title%></td></tr>
+           <%})%>
+          
+        </tbody>
+       </table>
+       </div>
+
+
+        <br/><%include ../layout/footer%>
+    </body>
+</html>
+
+
+

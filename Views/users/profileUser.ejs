@@ -1,0 +1,24 @@
+<html>
+    <head>
+            <%include ../layout/headerUser%>
+    </head>
+    <body>
+            <div class="box-body table-responsive col-md-8 col-md-offset-2">           
+        <h3> welcome </h3>
+        <table  class="table table-bordered table-hover tablecontainer">
+            <thead>
+                <tr><th>name</th><th>user name</th></tr>
+            </thead>
+            <tbody>                                                                                                <!-- //first <%= event.mainSpeakerId%>                          -->
+                <tr><td> <%=data.name%></td><td> <%=data.username%></td></tr>        
+        </tbody>
+       </table>
+       </div>
+
+
+        <br/><%include ../layout/footer%>
+    </body>
+</html>
+
+
+

@@ -1,0 +1,38 @@
+<%include ../layout/headerUser%>
+<body>
+    <form action="/users/add" method="post"  style="margin-top:6% " >
+
+        <div class="form-group col-md-6 formStyleHeader">
+            <div  class="col-md-2 formStyle">
+                <label class="col-md-12"> Name </label>
+            </div>
+            <div class="col-md-6">
+                <input type="text" name="name" class="form-control col-md-8" />
+            </div>
+        </div>
+
+        <div class="form-group col-md-6 formStyleHeader">
+                <div  class="col-md-2 formStyle">
+                    <label class="col-md-12"> User Name </label>
+                </div>
+                <div class="col-md-6">
+                    <input type="text" name="username" class="form-control col-md-8" />
+                </div>
+            </div>
+            <div class="form-group col-md-6 formStyleHeader">
+                    <div  class="col-md-2 formStyle">
+                        <label class="col-md-12"> Password </label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" name="password" class="form-control col-md-8" />
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                     <div class="col-md-offset-4 col-md-8">
+                            <input type="submit" class="btn btn-default" value="save" />
+                    </div>
+                </div>  
+    </form>
+    
+<%include ../layout/footer%>
