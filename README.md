@@ -1,3 +1,3 @@
 "# EventsHandler" 
 
-Simple Event Handler using node.js and Express
+Simple Event Handler using node.js, Express and MongoDB
