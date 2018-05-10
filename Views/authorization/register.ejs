@@ -1,0 +1,73 @@
+<html>
+    <head>
+            <link href="/css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
+            <link href="/css/style.css" rel="stylesheet" id="style">
+    </head>
+    <body>
+        <div>
+            <%=msg%>
+        </div>
+        <form method="post" action="/register" style="margin-top: 15%">
+            <div class="form-group col-md-6 formStyleHeader">
+                    <div  class="col-md-4 formStyle">
+                        <label class="col-md-12"> Name </label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="name"  class="form-control col-md-8" />
+                    </div>
+                </div>
+            <div class="form-group col-md-6 formStyleHeader">
+                    <div  class="col-md-4 formStyle">
+                        <label class="col-md-12"> User Name </label>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" name="username" class="form-control col-md-8" />
+                    </div>
+                </div>
+                <div class="form-group col-md-6 formStyleHeader">
+                        <div  class="col-md-4 formStyle">
+                            <label class="col-md-12"> Email </label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="email" class="form-control col-md-8" />
+                        </div>
+                    </div>
+                <div class="form-group col-md-6 formStyleHeader">
+                        <div  class="col-md-2 formStyle">
+                            <label class="col-md-8"> Gender </label>
+                        </div>
+                        <div class="col-md-6">
+                                <div class="col-md-4 col-md-offset-4"><label class="col-md-2"> male </label>  <input type="radio" name="gender" value="male" class="form-control col-md-1" /></div>
+                                <div class="col-md-4"> <label class="col-md-2"> female </label> <input type="radio" name="gender" value="female" class="form-control col-md-1" /></div>
+                        </div>
+                    </div>
+                    <div class="form-group col-md-6 formStyleHeader">
+                            <div  class="col-md-4 formStyle">
+                                <label class="col-md-12"> BirthDate </label>
+                            </div>
+                            <div class="col-md-6">
+                                <input type="date" name="date"  class="form-control col-md-8 datepicker" placeholder="mm/dd/yyyy" />
+                            </div>
+                        </div>
+
+                <div class="form-group col-md-6 formStyleHeader">
+                        <div  class="col-md-4 formStyle">
+                            <label class="col-md-12"> Password </label>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="password" name="password" class="form-control col-md-8" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                            <div class="col-md-offset-5 col-md-2">
+                                   <input type="submit" class="btn btn-default" value="Register" />
+                                   <a class="link" href="/login">Login</a>
+                           </div>
+                       </div>  
+
+        </form>
+        <script src="/js/jquery-3.2.1.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+    </body>
+</html>
