@@ -1,0 +1,35 @@
+<html>
+    <head>
+        
+        <%include ../layout/header%>
+    </head>
+    <body>
+            <div class="box-body table-responsive col-md-8 col-md-offset-2">           
+        <h3> events List </h3>
+        <table  class="table table-bordered table-hover tablecontainer">
+            <thead>
+                <tr><th>id</th><th>title</th><th>speakername</th><th>otherSpeakers</th><th></th></tr>
+            </thead>
+            <tbody>
+                <% data.forEach((event)=>{ %>                                                                                                 <!-- //first <%= event.mainSpeakerId%>                          -->
+                <tr><td> <%= event._id%></td><td> <%= event.title%></td><td> <%= event.mainSpeaker.name%></td>
+                    <td> <ul>
+                        <%event.otherSpeakers.forEach((elm)=>{%>
+                           <li> <%= elm.name%></li>
+                        <%})%>
+                    </select></td>
+         
+                    <td><a href="/events/delete/<%= event._id%>" class="btn btn-danger">Delete</a>
+                    <a href="/events/edit/<%= event._id%>" class="btn btn-primary">Edit</a></td></tr> 
+                                
+            <%})%>
+           
+          
+        </tbody>
+       </table>
+       </div>
+
+
+        <br/><%include ../layout/footer%>
+    </body>
+</html>
